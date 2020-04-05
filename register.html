@@ -29,7 +29,64 @@
       </div>
   </header>
   <main>
-
+    <div class="register-intro">
+      <h2>Register</h2>
+      <h3>Every year we aim to have an unbelievable time, and this year
+      we'd love it for you to join us. Conference passes only $99, one
+      of the best values you'll find.</h3>
+    </div>
+    <div class="register-main">
+      <div class="register-text">
+        <div class="register-heading">
+          <h3>Purchase a Conference Pass</h3>
+          <h6>$99 per pass</h6><!-- Text transform uppercase -->
+        </div>
+        <div class="instructions">
+          <p>Purchase your Styles Conference Pass using the form to the right
+          Multiple passes may be purchased within the same order, so feel free
+          to bring a friend or two along. Once your order is finished we'll
+          follow up and provide a receipt for your purchase. See you soon!</p>
+        </div>
+        <div class="attend-list">
+          <ul>
+            <span><h5>Why attend?</h5></span>
+            <li>Over twenty world-class speakers</li>
+            <li>One full day of workshops and two full days of presentations</li>
+            <li>Hosted at the Chicago Theatre, a historical landmark</li>
+            <li>August in Chicago is simply amazing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="register-form">
+        <form class="register" action="./register.html" method="post">
+          <span>Name</span>
+          <br>
+          <input id="name-field" type="name" name="register" value="Full name"
+          required>
+          <br>
+          <span>Email</span>
+          <br>
+          <input type="email" name="register" id="email-field" value="Email address"
+          required pattern="[0-9a-zA-z]">
+          <br>
+          <span>Number of passes</span>
+          <br>
+          <input type="number" name="register" id="number-field" value="1"
+          step="1" min="1"><!-- Field should be narrower -->
+          <br>
+          <span>Comments</span>
+          <br>
+          <textarea id="comment-field" name="register" rows="5" columns="50">
+          </textarea>
+          <br>
+          <input id="purchase-button" type="submit" name="register"
+          value="Purchase"><!-- Text transform uppercase -->
+          <!-- In case input button can't be formatted<button id="purchase-button"
+          onclick=onclick="window.location.href = 'register.html';"
+          name="register">Purchase</button>-->
+        </form>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="footer-content">
