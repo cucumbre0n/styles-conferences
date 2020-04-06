@@ -55,27 +55,58 @@ body {
 /*==================*/
 
 header {
+  background-color: rgb(41, 63, 80);
+  display: flex;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 3rem;
+  width: 50%;
+  color: white;
+  margin-top: 0;
 
 }
 
 header .header {
-
+  display: inline-flex;
 }
 
 header .header-maintitle {
-
+  border-top: 5px solid rgb(100, 136, 128);
+  border-top-width: 30%;
 }
 
 header .dateandnav {
-
 }
 
 header .dateandnav h5 {
-
+  color: rgb(100, 136, 128);
 }
 
 header .top-nav {
 
+}
+
+/*============================*/
+/* H & F Universal Nav Style */
+/*==========================*/
+
+nav {
+  width: 100%;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 2%;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
 }
 
 /*==================*/
@@ -83,11 +114,12 @@ header .top-nav {
 /*==================*/
 
 main {
-
+  position: relative;
+  top: 150px;
 }
 
 .craft-intro {
-
+  background-color: rgb(41, 63, 80);
 }
 
 .craft-intro h2 {
